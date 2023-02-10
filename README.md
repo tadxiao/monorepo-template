@@ -4,6 +4,12 @@
 
 - how to use
 
+  - install
+  
+    ```shell
+    npm i
+    ```
+
   - dev
 
     ```shell

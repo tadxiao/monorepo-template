@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "build": "npm run build -ws",
     "build:react": "npm run build -w @ma/finance-admin-react",
     "build:vue3": "npm run build -w @ma/finance-admin-vue3",
@@ -30,7 +31,10 @@
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "commitlint-config-emoji-log": "^0.8.0",
     "concurrently": "^7.6.0",
-    "git-cz": "^4.9.0"
+    "git-cz": "^4.9.0",
+    "husky": "^8.0.3"
   }
 }

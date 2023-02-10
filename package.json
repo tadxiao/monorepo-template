@@ -23,7 +23,7 @@
     "packages/*",
     "domains/*/*"
   ],
-  "dependencies": {
-    "concurrently": "7.6.0"
+  "devDependencies": {
+    "concurrently": "^7.6.0"
   }
 }

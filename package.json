@@ -13,7 +13,8 @@
     "dev:utils": "npm run dev -w @ma/utils",
     "dev:react": "npm run dev -w @ma/finance-admin-react",
     "dev:vue3": "npm run dev -w @ma/finance-admin-vue3",
-    "dev:docs": "npm run dev -w @ma/docs"
+    "dev:docs": "npm run dev -w @ma/docs",
+    "commit": "git cz"
   },
   "keywords": [],
   "author": "fancn21th <fancn21th@aliyun.com> (http://fancn21th.cn/)",
@@ -23,7 +24,13 @@
     "packages/*",
     "domains/*/*"
   ],
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  },
   "devDependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.6.0",
+    "git-cz": "^4.9.0"
   }
 }

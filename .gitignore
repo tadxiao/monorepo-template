@@ -145,3 +145,9 @@ front-workspace.code-workspace
 
 .temp
 .cache
+
+############################
+# Miniapp
+############################
+
+project.private.config.json

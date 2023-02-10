@@ -30,11 +30,18 @@
       "path": "git-cz"
     }
   },
+  "lint-staged": {
+    "*.{js,md,css,scss,yaml,yml,wxs,wxml,wxss,json,ts,vue,jsx,tsx,less}": [
+      "prettier --write"
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "commitlint-config-emoji-log": "^0.8.0",
     "concurrently": "^7.6.0",
     "git-cz": "^4.9.0",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
+    "prettier": "2.8.4"
   }
 }

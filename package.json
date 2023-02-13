@@ -33,12 +33,20 @@
   "lint-staged": {
     "*.{js,md,css,scss,yaml,yml,wxs,wxml,wxss,json,ts,vue,jsx,tsx,less}": [
       "prettier --write"
+    ],
+    "*.{js,ts,vue,jsx,tsx}": [
+      "eslint --fix"
     ]
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
     "commitlint-config-emoji-log": "^0.8.0",
     "concurrently": "^7.6.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-vue": "^9.9.0",
     "git-cz": "^4.9.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.1",

@@ -17,6 +17,7 @@
     "dev:docs": "npm run dev -w @ma/docs",
     "commit": "git cz",
     "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "release-minor": "npm run release:check && release-it minor",
     "release-major": "npm run release:check && release-it major",
     "release:check": "npm run lint && npm run build"

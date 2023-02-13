@@ -2,6 +2,7 @@
 **/build/**
 **/dist/**
 changelog.config.js
+commitlint.config.ts
 .prettierrc.js
 .eslintrc.js
 .eslintrc.miniapp.js

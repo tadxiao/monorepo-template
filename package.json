@@ -15,7 +15,11 @@
     "dev:react": "npm run dev -w @ma/finance-admin-react",
     "dev:vue3": "npm run dev -w @ma/finance-admin-vue3",
     "dev:docs": "npm run dev -w @ma/docs",
-    "commit": "git cz"
+    "commit": "git cz",
+    "lint": "eslint .",
+    "release-minor": "npm run release:check && release-it minor",
+    "release-major": "npm run release:check && release-it major",
+    "release:check": "npm run lint && npm run build"
   },
   "keywords": [],
   "author": "fancn21th <fancn21th@aliyun.com> (http://fancn21th.cn/)",
@@ -42,6 +46,7 @@
     "@commitlint/cli": "^17.4.2",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
+    "auto-changelog": "^2.4.0",
     "commitlint-config-emoji-log": "^0.8.0",
     "concurrently": "^7.6.0",
     "eslint": "^8.34.0",
@@ -50,6 +55,7 @@
     "git-cz": "^4.9.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.1",
-    "prettier": "2.8.4"
+    "prettier": "2.8.4",
+    "release-it": "^15.6.0"
   }
 }

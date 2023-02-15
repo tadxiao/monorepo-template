@@ -3,6 +3,9 @@ const vuePaths = ['domains/finance/finance-admin-vue3/src/**/*.{js,ts,vue}'];
 const miniAppPaths = ['domains/finance/finance-wechat-app/src/**/*.{js}'];
 
 module.exports = {
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
   overrides: [
     {
       files: reactPaths,
